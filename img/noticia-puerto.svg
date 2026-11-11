@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#bfe3f2"/>
+  <circle cx="620" cy="120" r="56" fill="#f2a900"/>
+  <path d="M0 260 C150 200 300 230 420 210 S650 180 800 220 V320 H0Z" fill="#0f4a70"/>
+  <rect x="0" y="300" width="800" height="200" fill="#126a8f"/>
+  <path d="M0 330 Q40 320 80 330 T160 330 T240 330 T320 330 T400 330 T480 330 T560 330 T640 330 T720 330 T800 330" stroke="#5fb3d3" stroke-width="4" fill="none"/>
+  <path d="M0 410 Q40 400 80 410 T160 410 T240 410 T320 410 T400 410 T480 410 T560 410 T640 410 T720 410 T800 410" stroke="#5fb3d3" stroke-width="4" fill="none"/>
+  <g><path d="M120 360 h170 l-25 40 h-120z" fill="#e94e3c"/><rect x="200" y="290" width="6" height="70" fill="#0b3a5b"/><path d="M206 295 l50 55 h-50z" fill="#f6efe3"/></g>
+  <g><path d="M430 380 h140 l-20 34 h-100z" fill="#f2a900"/><rect x="495" y="320" width="5" height="60" fill="#0b3a5b"/><path d="M500 325 l40 48 h-40z" fill="#f6efe3"/></g>
+  <rect x="640" y="250" width="160" height="60" fill="#0b3a5b"/><rect x="650" y="310" width="10" height="60" fill="#0b3a5b"/><rect x="780" y="310" width="10" height="60" fill="#0b3a5b"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#fde7a6"/>
+  <circle cx="400" cy="140" r="70" fill="#f2a900"/>
+  <path d="M0 230 L120 140 L240 220 L360 120 L500 230 L640 150 L800 230 V300 H0Z" fill="#a37b4c"/>
+  <path d="M0 260 L160 190 L300 250 L460 180 L620 250 L800 200 V320 H0Z" fill="#8a5a2b"/>
+  <g fill="#4c7a3a"><circle cx="90" cy="270" r="14"/><circle cx="210" cy="265" r="10"/><circle cx="560" cy="268" r="12"/><circle cx="700" cy="262" r="14"/></g>
+  <rect x="0" y="300" width="800" height="200" fill="#126a8f"/>
+  <path d="M0 340 Q40 330 80 340 T160 340 T240 340 T320 340 T400 340 T480 340 T560 340 T640 340 T720 340 T800 340" stroke="#5fb3d3" stroke-width="4" fill="none"/>
+  <g>
+    <rect x="80" y="250" width="70" height="50" fill="#f6efe3"/><path d="M75 250 l40 -26 l40 26z" fill="#e94e3c"/>
+    <rect x="170" y="258" width="60" height="42" fill="#5fb3d3"/><path d="M165 258 l35 -22 l35 22z" fill="#0b3a5b"/>
+    <rect x="600" y="255" width="70" height="45" fill="#f2a900"/><path d="M595 255 l40 -24 l40 24z" fill="#e94e3c"/>
+  </g>
+  <g><path d="M300 390 h120 l-18 30 h-84z" fill="#e94e3c"/><path d="M500 420 h100 l-15 26 h-70z" fill="#f6efe3"/></g>
+  <rect x="380" y="300" width="300" height="12" fill="#4f5d6b"/>
+  <g fill="#4f5d6b"><rect x="400" y="312" width="8" height="60"/><rect x="520" y="312" width="8" height="60"/><rect x="650" y="312" width="8" height="60"/></g>
+</svg>

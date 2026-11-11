@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Christopher Suazo · Candidato a alcalde de Coquimbo</title>
+  <meta name="description" content="Sitio de la candidatura de Christopher Suazo a la alcaldía de Coquimbo: noticias de la comuna, reuniones, convocatorias y contacto.">
+  <meta name="theme-color" content="#0b3a5b">
+  <meta property="og:title" content="Christopher Suazo · Candidato a alcalde de Coquimbo">
+  <meta property="og:description" content="Noticias de la comuna, reuniones, convocatorias y contacto.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CL">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- AVISO DE CONTENIDO DE EJEMPLO: eliminar este bloque cuando el sitio tenga contenido real -->
+  <div class="aviso-ejemplo" role="note">
+    Sitio en construcción · Las noticias, actividades e imágenes son contenido de ejemplo.
+  </div>
+
+  <header class="cabecera" id="inicio">
+    <div class="contenedor cabecera__fila">
+      <a class="marca" href="#inicio" aria-label="Christopher Suazo, ir al inicio">
+        <span class="marca__sello" aria-hidden="true">CS</span>
+        <span class="marca__texto">
+          <strong>Christopher Suazo</strong>
+          <small>Alcalde para Coquimbo</small>
+        </span>
+      </a>
+
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="menu-boton__barras" aria-hidden="true"></span>
+        <span class="solo-lectores">Abrir menú</span>
+      </button>
+
+      <nav class="menu" id="menu" aria-label="Menú principal">
+        <ul>
+          <li><a href="#noticias">Noticias</a></li>
+          <li><a href="#comunicaciones">Comunicaciones</a></li>
+          <li><a href="#acerca">Acerca de</a></li>
+          <li><a class="menu__destacado" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===================== PORTADA ===================== -->
+    <section class="portada">
+      <img class="portada__fondo" src="img/portada-coquimbo.svg" alt="" aria-hidden="true">
+      <div class="contenedor portada__grilla">
+        <div class="portada__texto">
+          <p class="etiqueta">Candidato a alcalde · Comuna de Coquimbo</p>
+          <h1>El pueblo<br>con <em>Suazo</em></h1>
+          <p class="portada__bajada">
+            Una candidatura que se construye en los barrios, las caletas y las localidades
+            rurales de Coquimbo. Aquí encontrarás las noticias de la comuna y las
+            próximas reuniones para sumarte.
+          </p>
+          <div class="portada__acciones">
+            <a class="boton boton--primario" href="#contacto">Quiero sumarme</a>
+            <a class="boton boton--claro" href="#comunicaciones">Ver próximas actividades</a>
+          </div>
+        </div>
+        <figure class="portada__imagen">
+          <!-- Reemplazar por la foto oficial del candidato (recomendado 900 × 1000 px) -->
+          <img src="img/candidato.svg" alt="Espacio reservado para la fotografía de Christopher Suazo" width="450" height="500">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== NOTICIAS ===================== -->
+    <section class="seccion" id="noticias">
+      <div class="contenedor">
+        <header class="seccion__cabecera">
+          <p class="etiqueta etiqueta--oscura">Actualidad</p>
+          <h2>Noticias de la comuna</h2>
+          <p>Lo que está pasando en Coquimbo y en la campaña.</p>
+        </header>
+
+        <!--
+          CÓMO AGREGAR UNA NOTICIA
+          Copia un bloque <article class="noticia"> completo, pégalo al principio de la
+          lista y cambia la imagen, la fecha, el título y el texto.
+          La noticia con la clase "noticia--principal" se muestra en grande.
+        -->
+        <div class="noticias">
+          <article class="noticia noticia--principal">
+            <img src="img/noticia-puerto.svg" alt="Ilustración del puerto de Coquimbo con botes de pesca" width="800" height="500" loading="lazy">
+            <div class="noticia__cuerpo">
+              <p class="noticia__meta"><span class="categoria">Borde costero</span><time datetime="2026-11-09">9 de noviembre de 2026</time></p>
+              <h3>Pescadores y vecinos del puerto plantean sus prioridades para el borde costero</h3>
+              <p>En un encuentro abierto en la caleta, dirigentes de la pesca artesanal y vecinos del sector conversaron sobre limpieza, seguridad y espacios para el comercio local. Las propuestas recogidas se sumarán al programa participativo.</p>
+              <a class="enlace" href="#contacto">Enviar una propuesta</a>
+            </div>
+          </article>
+
+          <article class="noticia">
+            <img src="img/noticia-barrio.svg" alt="Ilustración de casas en un cerro de noche" width="800" height="500" loading="lazy">
+            <div class="noticia__cuerpo">
+              <p class="noticia__meta"><span class="categoria">Seguridad</span><time datetime="2026-11-06">6 de noviembre de 2026</time></p>
+              <h3>Juntas de vecinos de la Parte Alta piden más luminarias y presencia municipal</h3>
+              <p>Dirigentes de varios sectores identificaron los puntos con menos iluminación del barrio y propusieron rondas preventivas.</p>
+            </div>
+          </article>
+
+          <article class="noticia">
+            <img src="img/noticia-feria.svg" alt="Ilustración de puestos de una feria libre" width="800" height="500" loading="lazy">
+            <div class="noticia__cuerpo">
+              <p class="noticia__meta"><span class="categoria">Economía local</span><time datetime="2026-11-03">3 de noviembre de 2026</time></p>
+              <h3>Feriantes de Tierras Blancas conversan sobre ordenamiento y nuevos puestos</h3>
+              <p>Los comerciantes propusieron mejorar baños, estacionamientos y el retiro de residuos al término de cada jornada.</p>
+            </div>
+          </article>
+
+          <article class="noticia">
+            <img src="img/noticia-playa.svg" alt="Ilustración de una playa con voluntarios" width="800" height="500" loading="lazy">
+            <div class="noticia__cuerpo">
+              <p class="noticia__meta"><span class="categoria">Medioambiente</span><time datetime="2026-10-30">30 de octubre de 2026</time></p>
+              <h3>Voluntarios realizan jornada de limpieza en la playa de Peñuelas</h3>
+              <p>Más de un centenar de personas participó en la actividad, que se repetirá antes del inicio de la temporada de verano.</p>
+            </div>
+          </article>
+
+          <article class="noticia">
+            <img src="img/noticia-cancha.svg" alt="Ilustración de una cancha de fútbol de barrio" width="800" height="500" loading="lazy">
+            <div class="noticia__cuerpo">
+              <p class="noticia__meta"><span class="categoria">Deporte</span><time datetime="2026-10-27">27 de octubre de 2026</time></p>
+              <h3>Clubes de barrio de Sindempart piden recuperar canchas y sedes</h3>
+              <p>Dirigentes deportivos entregaron un catastro de recintos que necesitan mantención y nuevos camarines.</p>
+            </div>
+          </article>
+
+          <article class="noticia">
+            <img src="img/noticia-rural.svg" alt="Ilustración de una caleta rural junto a los cerros" width="800" height="500" loading="lazy">
+            <div class="noticia__cuerpo">
+              <p class="noticia__meta"><span class="categoria">Localidades</span><time datetime="2026-10-23">23 de octubre de 2026</time></p>
+              <h3>Tongoy y Guanaqueros: vecinos plantean mejoras en agua, caminos y transporte</h3>
+              <p>El recorrido por las localidades del sur de la comuna incluyó conversaciones con comités de agua y organizaciones de turismo.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COMUNICACIONES ===================== -->
+    <section class="seccion seccion--mar" id="comunicaciones">
+      <div class="contenedor">
+        <header class="seccion__cabecera">
+          <p class="etiqueta">Agenda</p>
+          <h2>Comunicaciones</h2>
+          <p>Reuniones, asambleas y convocatorias abiertas. Ven con tus vecinos.</p>
+        </header>
+
+        <div class="filtros" role="group" aria-label="Filtrar actividades por tipo">
+          <button type="button" class="filtro activo" data-filtro="todos" aria-pressed="true">Todas</button>
+          <button type="button" class="filtro" data-filtro="reunion" aria-pressed="false">Reuniones</button>
+          <button type="button" class="filtro" data-filtro="movilizacion" aria-pressed="false">Movilizaciones</button>
+          <button type="button" class="filtro" data-filtro="aviso" aria-pressed="false">Avisos</button>
+        </div>
+
+        <!--
+          CÓMO AGREGAR UNA ACTIVIDAD
+          Copia un <li class="actividad"> y cambia data-tipo ("reunion", "movilizacion" o "aviso"),
+          la fecha, el título, el lugar y la descripción.
+        -->
+        <ul class="agenda">
+          <li class="actividad" data-tipo="reunion">
+            <time class="actividad__fecha" datetime="2026-11-14T19:00"><span>14</span>NOV</time>
+            <div class="actividad__cuerpo">
+              <p class="actividad__tipo">Reunión</p>
+              <h3>Asamblea vecinal en Tierras Blancas</h3>
+              <p class="actividad__lugar">Sábado · 19:00 h · Sede vecinal del sector (dirección por confirmar)</p>
+              <p>Conversación abierta sobre seguridad, plazas y transporte. Si puedes, trae tus propuestas por escrito.</p>
+            </div>
+          </li>
+
+          <li class="actividad" data-tipo="movilizacion">
+            <time class="actividad__fecha" datetime="2026-11-21T11:00"><span>21</span>NOV</time>
+            <div class="actividad__cuerpo">
+              <p class="actividad__tipo">Movilización</p>
+              <h3>Caminata por el borde costero</h3>
+              <p class="actividad__lugar">Sábado · 11:00 h · Desde la Avenida Costanera hacia el puerto</p>
+              <p>Recorrido familiar para conversar con vecinos y comerciantes. Se recomienda llevar agua y gorro.</p>
+            </div>
+          </li>
+
+          <li class="actividad" data-tipo="reunion">
+            <time class="actividad__fecha" datetime="2026-11-26T18:30"><span>26</span>NOV</time>
+            <div class="actividad__cuerpo">
+              <p class="actividad__tipo">Reunión</p>
+              <h3>Encuentro con emprendedoras y feriantes</h3>
+              <p class="actividad__lugar">Jueves · 18:30 h · Centro de Coquimbo (lugar por confirmar)</p>
+              <p>Mesa de trabajo sobre permisos, ferias y apoyo al comercio de barrio.</p>
+            </div>
+          </li>
+
+          <li class="actividad" data-tipo="aviso">
+            <time class="actividad__fecha" datetime="2026-11-30"><span>30</span>NOV</time>
+            <div class="actividad__cuerpo">
+              <p class="actividad__tipo">Aviso</p>
+              <h3>Inscripción de voluntarias y voluntarios</h3>
+              <p class="actividad__lugar">Hasta el 30 de noviembre · En línea</p>
+              <p>Si quieres ayudar en tu barrio, escríbenos desde el formulario de contacto e indica tu sector.</p>
+            </div>
+          </li>
+
+          <li class="actividad" data-tipo="movilizacion">
+            <time class="actividad__fecha" datetime="2026-12-05T10:00"><span>05</span>DIC</time>
+            <div class="actividad__cuerpo">
+              <p class="actividad__tipo">Movilización</p>
+              <h3>Puerta a puerta en Sindempart y El Llano</h3>
+              <p class="actividad__lugar">Sábado · 10:00 h · Punto de encuentro por confirmar</p>
+              <p>Jornada de conversación casa a casa. Los equipos se organizan por sector el mismo día.</p>
+            </div>
+          </li>
+
+          <li class="actividad" data-tipo="reunion">
+            <time class="actividad__fecha" datetime="2026-12-12T17:00"><span>12</span>DIC</time>
+            <div class="actividad__cuerpo">
+              <p class="actividad__tipo">Reunión</p>
+              <h3>Cabildo en Tongoy y Guanaqueros</h3>
+              <p class="actividad__lugar">Sábado · 17:00 h · Tongoy (lugar por confirmar)</p>
+              <p>Encuentro con comités de agua, pescadores y organizaciones de turismo de las localidades del sur.</p>
+            </div>
+          </li>
+        </ul>
+        <p class="agenda__vacia" hidden>No hay actividades de este tipo por ahora.</p>
+      </div>
+    </section>
+
+    <!-- ===================== ACERCA DE ===================== -->
+    <section class="seccion" id="acerca">
+      <div class="contenedor acerca">
+        <div class="acerca__texto">
+          <p class="etiqueta etiqueta--oscura">Acerca de</p>
+          <h2>¿De qué se trata este sitio?</h2>
+          <p>
+            Este es el sitio de la candidatura de <strong>Christopher Suazo</strong> a la
+            alcaldía de la comuna de Coquimbo. Su propósito es informar a vecinas y vecinos
+            y facilitar que participen.
+          </p>
+          <ul class="acerca__lista">
+            <li><strong>Noticias:</strong> actualidad de la comuna y de las actividades de la candidatura.</li>
+            <li><strong>Comunicaciones:</strong> fechas y lugares de reuniones, asambleas y movilizaciones.</li>
+            <li><strong>Contacto:</strong> redes sociales y un formulario para escribirnos directamente.</li>
+          </ul>
+        </div>
+
+        <aside class="acerca__tarjeta">
+          <h3>Sobre Christopher Suazo</h3>
+          <!-- Reemplazar por la reseña real del candidato -->
+          <p class="pendiente">[Reseña biográfica por completar: trayectoria, vínculo con la comuna y motivaciones de la candidatura.]</p>
+          <a class="boton boton--primario" href="#contacto">Escríbenos</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section class="seccion seccion--arena" id="contacto">
+      <div class="contenedor contacto">
+        <div class="contacto__info">
+          <p class="etiqueta etiqueta--oscura">Contacto</p>
+          <h2>Conversemos</h2>
+          <p>Cuéntanos qué necesita tu barrio, invítanos a tu organización o súmate como voluntario o voluntaria.</p>
+
+          <h3 class="contacto__subtitulo">Redes sociales</h3>
+          <!-- Reemplazar cada href="#" por la dirección real de la cuenta -->
+          <ul class="redes">
+            <li><a href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7h2.3l.4-3h-2.7V9.2c0-.9.3-1.5 1.5-1.5h1.3V5.1c-.3 0-1.1-.1-2-.1-2 0-3.3 1.2-3.3 3.4V11H8.5v3H11v7z"/></svg>
+              <span>Facebook</span></a></li>
+            <li><a href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.6" cy="7.4" r=".6" fill="currentColor"/></svg>
+              <span>Instagram</span></a></li>
+            <li><a href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg>
+              <span>X</span></a></li>
+            <li><a href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4v10.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M13 4c.4 2.6 2 4.2 4.5 4.5"/></svg>
+              <span>TikTok</span></a></li>
+            <li><a href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M10.3 9.3v5.4l4.7-2.7z"/></svg>
+              <span>YouTube</span></a></li>
+            <li><a href="#" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 20l1.3-4.2A8 8 0 1 1 8.3 19z"/></svg>
+              <span>WhatsApp</span></a></li>
+          </ul>
+
+          <p class="contacto__correo">
+            Correo: <a href="mailto:contacto@elpuebloconsuazo.cl">contacto@elpuebloconsuazo.cl</a>
+          </p>
+        </div>
+
+        <form class="formulario" id="formulario-contacto" action="enviar.php" method="post" novalidate>
+          <h3>Envíanos un mensaje</h3>
+
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required maxlength="100">
+            <p class="campo__error" id="error-nombre"></p>
+          </div>
+
+          <div class="campo-doble">
+            <div class="campo">
+              <label for="correo">Correo electrónico</label>
+              <input type="email" id="correo" name="correo" autocomplete="email" required maxlength="150">
+              <p class="campo__error" id="error-correo"></p>
+            </div>
+            <div class="campo">
+              <label for="telefono">Teléfono <span class="opcional">(opcional)</span></label>
+              <input type="tel" id="telefono" name="telefono" autocomplete="tel" maxlength="30" placeholder="+56 9 ...">
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="sector">Sector o localidad <span class="opcional">(opcional)</span></label>
+            <input type="text" id="sector" name="sector" maxlength="100" placeholder="Ej.: Tierras Blancas">
+          </div>
+
+          <div class="campo">
+            <label for="motivo">Motivo</label>
+            <select id="motivo" name="motivo">
+              <option>Quiero sumarme como voluntario o voluntaria</option>
+              <option>Tengo una propuesta para la comuna</option>
+              <option>Invitación a una reunión u organización</option>
+              <option>Prensa</option>
+              <option>Otro</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required maxlength="3000"></textarea>
+            <p class="campo__error" id="error-mensaje"></p>
+          </div>
+
+          <!-- Campo trampa contra robots: debe quedar vacío -->
+          <div class="trampa" aria-hidden="true">
+            <label for="sitio">No completar este campo</label>
+            <input type="text" id="sitio" name="sitio" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button class="boton boton--primario boton--ancho" type="submit">Enviar mensaje</button>
+          <p class="formulario__estado" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__fila">
+      <p><strong>Christopher Suazo</strong> · Candidato a alcalde de Coquimbo</p>
+      <nav aria-label="Menú del pie de página">
+        <a href="#noticias">Noticias</a>
+        <a href="#comunicaciones">Comunicaciones</a>
+        <a href="#acerca">Acerca de</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="pie__legal">© <span id="anio">2026</span> elpuebloconsuazo.cl</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
