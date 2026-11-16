@@ -1,6 +1,6 @@
 /* =========================================================
    Interacciones del sitio: menú móvil, sección activa,
-   filtros de la agenda y envío del formulario de contacto.
+   y filtros de la agenda.
    ========================================================= */
 (function () {
   "use strict";
@@ -77,84 +77,6 @@
 
       mensajeVacio.hidden = visibles > 0;
     });
-  });
-
-  /* ---------- Formulario de contacto ---------- */
-  var formulario = document.getElementById("formulario-contacto");
-  var estado = formulario.querySelector(".formulario__estado");
-  var botonEnviar = formulario.querySelector("button[type='submit']");
-
-  var reglas = {
-    nombre: function (v) { return v.trim().length >= 2 ? "" : "Escribe tu nombre."; },
-    correo: function (v) {
-      return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()) ? "" : "Escribe un correo electrónico válido.";
-    },
-    mensaje: function (v) { return v.trim().length >= 10 ? "" : "El mensaje debe tener al menos 10 caracteres."; }
-  };
-
-  function validarCampo(nombre) {
-    var campo = formulario.elements[nombre];
-    var error = reglas[nombre](campo.value);
-    document.getElementById("error-" + nombre).textContent = error;
-    campo.setAttribute("aria-invalid", error ? "true" : "false");
-    if (error) campo.setAttribute("aria-describedby", "error-" + nombre);
-    else campo.removeAttribute("aria-describedby");
-    return !error;
-  }
-
-  Object.keys(reglas).forEach(function (nombre) {
-    formulario.elements[nombre].addEventListener("blur", function () { validarCampo(nombre); });
-  });
-
-  function mostrarEstado(texto, tipo) {
-    estado.textContent = texto;
-    estado.className = "formulario__estado " + (tipo || "");
-  }
-
-  formulario.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    var primeroInvalido = null;
-    Object.keys(reglas).forEach(function (nombre) {
-      if (!validarCampo(nombre) && !primeroInvalido) primeroInvalido = formulario.elements[nombre];
-    });
-    if (primeroInvalido) {
-      mostrarEstado("Revisa los campos marcados.", "error");
-      primeroInvalido.focus();
-      return;
-    }
-
-    botonEnviar.disabled = true;
-    botonEnviar.textContent = "Enviando…";
-    mostrarEstado("");
-
-    fetch(formulario.action, {
-      method: "POST",
-      body: new FormData(formulario),
-      headers: { "Accept": "application/json" }
-    })
-      .then(function (r) {
-        return r.json().catch(function () { return { ok: false }; }).then(function (datos) {
-          if (!r.ok || !datos.ok) throw new Error(datos.mensaje || "Error de envío");
-          return datos;
-        });
-      })
-      .then(function () {
-        formulario.reset();
-        mostrarEstado("¡Gracias! Recibimos tu mensaje y te responderemos pronto.", "ok");
-      })
-      .catch(function (err) {
-        mostrarEstado(
-          (err && err.message && err.message !== "Failed to fetch" && err.message !== "Error de envío")
-            ? err.message
-            : "No pudimos enviar el mensaje. Inténtalo de nuevo o escríbenos a contacto@elpuebloconsuazo.cl.",
-          "error"
-        );
-      })
-      .finally(function () {
-        botonEnviar.disabled = false;
-        botonEnviar.textContent = "Enviar mensaje";
-      });
   });
 
   /* ---------- Año actual en el pie ---------- */

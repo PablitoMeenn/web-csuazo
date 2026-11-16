@@ -208,7 +208,7 @@
               <p class="actividad__tipo">Aviso</p>
               <h3>Inscripción de voluntarias y voluntarios</h3>
               <p class="actividad__lugar">Hasta el 30 de noviembre · En línea</p>
-              <p>Si quieres ayudar en tu barrio, escríbenos desde el formulario de contacto e indica tu sector.</p>
+              <p>Si quieres ayudar en tu barrio, escríbenos por nuestras redes sociales e indica tu sector.</p>
             </div>
           </li>
 
@@ -250,7 +250,7 @@
           <ul class="acerca__lista">
             <li><strong>Noticias:</strong> actualidad de la comuna y de las actividades de la candidatura.</li>
             <li><strong>Comunicaciones:</strong> fechas y lugares de reuniones, asambleas y movilizaciones.</li>
-            <li><strong>Contacto:</strong> redes sociales y un formulario para escribirnos directamente.</li>
+            <li><strong>Contacto:</strong> nuestras redes sociales para seguirnos y escribirnos.</li>
           </ul>
         </div>
 
@@ -258,7 +258,7 @@
           <h3>Sobre Christopher Suazo</h3>
           <!-- Reemplazar por la reseña real del candidato -->
           <p class="pendiente">[Reseña biográfica por completar: trayectoria, vínculo con la comuna y motivaciones de la candidatura.]</p>
-          <a class="boton boton--primario" href="#contacto">Escríbenos</a>
+          <a class="boton boton--primario" href="#contacto">Síguenos en redes</a>
         </aside>
       </div>
     </section>
@@ -298,59 +298,6 @@
             Correo: <a href="mailto:contacto@elpuebloconsuazo.cl">contacto@elpuebloconsuazo.cl</a>
           </p>
         </div>
-
-        <form class="formulario" id="formulario-contacto" action="enviar.php" method="post" novalidate>
-          <h3>Envíanos un mensaje</h3>
-
-          <div class="campo">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" autocomplete="name" required maxlength="100">
-            <p class="campo__error" id="error-nombre"></p>
-          </div>
-
-          <div class="campo-doble">
-            <div class="campo">
-              <label for="correo">Correo electrónico</label>
-              <input type="email" id="correo" name="correo" autocomplete="email" required maxlength="150">
-              <p class="campo__error" id="error-correo"></p>
-            </div>
-            <div class="campo">
-              <label for="telefono">Teléfono <span class="opcional">(opcional)</span></label>
-              <input type="tel" id="telefono" name="telefono" autocomplete="tel" maxlength="30" placeholder="+56 9 ...">
-            </div>
-          </div>
-
-          <div class="campo">
-            <label for="sector">Sector o localidad <span class="opcional">(opcional)</span></label>
-            <input type="text" id="sector" name="sector" maxlength="100" placeholder="Ej.: Tierras Blancas">
-          </div>
-
-          <div class="campo">
-            <label for="motivo">Motivo</label>
-            <select id="motivo" name="motivo">
-              <option>Quiero sumarme como voluntario o voluntaria</option>
-              <option>Tengo una propuesta para la comuna</option>
-              <option>Invitación a una reunión u organización</option>
-              <option>Prensa</option>
-              <option>Otro</option>
-            </select>
-          </div>
-
-          <div class="campo">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required maxlength="3000"></textarea>
-            <p class="campo__error" id="error-mensaje"></p>
-          </div>
-
-          <!-- Campo trampa contra robots: debe quedar vacío -->
-          <div class="trampa" aria-hidden="true">
-            <label for="sitio">No completar este campo</label>
-            <input type="text" id="sitio" name="sitio" tabindex="-1" autocomplete="off">
-          </div>
-
-          <button class="boton boton--primario boton--ancho" type="submit">Enviar mensaje</button>
-          <p class="formulario__estado" role="status" aria-live="polite"></p>
-        </form>
       </div>
     </section>
   </main>
