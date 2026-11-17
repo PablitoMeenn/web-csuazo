@@ -99,7 +99,7 @@ a { color: var(--mar); }
 
 .menu ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 6px; align-items: center; }
 .menu a {
-  display: block; padding: 10px 14px; border-radius: 999px;
+  display: block; padding: 10px 14px; white-space: nowrap; border-radius: 999px;
   color: var(--azul); font-weight: 600; text-decoration: none;
 }
 .menu a:hover { background: var(--arena); }
@@ -210,6 +210,23 @@ a { color: var(--mar); }
 .actividad__cuerpo p:last-child { color: rgba(255,255,255,.78); margin-bottom: 0; }
 .agenda__vacia { color: rgba(255,255,255,.8); }
 
+/* ---------- Redes Sociales (publicaciones de Instagram) ---------- */
+.publicaciones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; align-items: start; }
+.publicacion { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+/* Instagram fija anchos propios; se ajustan a la columna */
+.publicacion .instagram-media {
+  width: 100% !important; min-width: 0 !important; max-width: 100% !important; margin: 0 !important;
+  border: 1px solid var(--borde) !important; border-radius: var(--radio) !important;
+  box-shadow: none !important; background: var(--blanco);
+}
+.publicacion blockquote.instagram-media { padding: 0; }
+.publicacion__respaldo {
+  display: grid; place-items: center; min-height: 320px; padding: 24px;
+  text-align: center; font-weight: 700; color: var(--mar);
+}
+.publicacion__boton { align-self: stretch; }
+.publicaciones__seguir { margin: 32px 0 0; }
+
 /* ---------- Acerca de ---------- */
 .acerca { display: grid; grid-template-columns: 1.3fr 1fr; gap: 56px; align-items: start; }
 .acerca__texto > p { font-size: 1.15rem; }
@@ -256,13 +273,13 @@ a { color: var(--mar); }
   .noticia--principal img { aspect-ratio: 16 / 9; min-height: 0; height: auto; }
   .noticia--principal .noticia__cuerpo { padding: 26px; }
   .agenda { grid-template-columns: 1fr; }
+  .publicaciones { grid-template-columns: repeat(2, 1fr); }
   .acerca { grid-template-columns: 1fr; gap: 40px; }
   .redes { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* ---------- Teléfono ---------- */
-@media (max-width: 760px) {
-  :root { --alto-cabecera: 64px; }
+/* ---------- Menú desplegable (teléfonos y tabletas angostas) ---------- */
+@media (max-width: 900px) {
   .menu-boton { display: block; }
   .menu {
     position: absolute; top: var(--alto-cabecera); left: 0; right: 0;
@@ -275,7 +292,11 @@ a { color: var(--mar); }
   .menu a { padding: 14px 16px; border-radius: 10px; }
   .menu a.activo { box-shadow: none; background: var(--arena); border-radius: 10px; }
   .menu a.menu__destacado { text-align: center; margin-top: 6px; }
+}
 
+/* ---------- Teléfono ---------- */
+@media (max-width: 760px) {
+  :root { --alto-cabecera: 64px; }
   .contenedor { padding: 0 16px; }
   .seccion { padding: 64px 0; }
   .portada__grilla { grid-template-columns: 1fr; gap: 0; padding-top: 48px; }
@@ -284,6 +305,7 @@ a { color: var(--mar); }
   .portada__acciones .boton { flex: 1 1 100%; }
 
   .noticias { grid-template-columns: 1fr; gap: 20px; }
+  .publicaciones { grid-template-columns: 1fr; gap: 20px; }
   .actividad { gap: 16px; padding: 18px; }
   .actividad__fecha { flex-basis: 64px; height: 72px; }
   .actividad__fecha span { font-size: 1.6rem; }

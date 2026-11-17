@@ -43,6 +43,7 @@
         <ul>
           <li><a href="#noticias">Noticias</a></li>
           <li><a href="#comunicaciones">Comunicaciones</a></li>
+          <li><a href="#redes">Redes Sociales</a></li>
           <li><a href="#acerca">Acerca de</a></li>
           <li><a class="menu__destacado" href="#contacto">Contacto</a></li>
         </ul>
@@ -236,6 +237,37 @@
       </div>
     </section>
 
+    <!-- ===================== REDES SOCIALES ===================== -->
+    <section class="seccion seccion--arena" id="redes">
+      <div class="contenedor">
+        <header class="seccion__cabecera">
+          <p class="etiqueta etiqueta--oscura">Instagram</p>
+          <h2>Redes Sociales</h2>
+          <p>Nuestras últimas publicaciones. Pincha una foto para abrirla en Instagram y dejar tu comentario.</p>
+        </header>
+
+        <!--
+          CÓMO AGREGAR UNA PUBLICACIÓN DE INSTAGRAM
+          Copia un bloque <article class="publicacion"> completo, pégalo al principio de la
+          lista y cambia la dirección de la publicación en los TRES lugares donde aparece
+          (data-instgrm-permalink y los dos href). La cuenta debe ser pública.
+        -->
+        <div class="publicaciones">
+          <article class="publicacion">
+            <blockquote class="instagram-media" data-instgrm-captioned
+              data-instgrm-permalink="https://www.instagram.com/p/C_6daGkPB2X2mPu0WYq6UGHa6rLmVoyrVtZ4Yw0/" data-instgrm-version="14">
+              <a class="publicacion__respaldo" href="https://www.instagram.com/p/C_6daGkPB2X2mPu0WYq6UGHa6rLmVoyrVtZ4Yw0/" target="_blank" rel="noopener">Ver esta publicación en Instagram</a>
+            </blockquote>
+            <a class="boton boton--primario publicacion__boton" href="https://www.instagram.com/p/C_6daGkPB2X2mPu0WYq6UGHa6rLmVoyrVtZ4Yw0/" target="_blank" rel="noopener">Comentar en Instagram</a>
+          </article>
+        </div>
+
+        <p class="publicaciones__seguir">
+          <a class="enlace" href="https://www.instagram.com/christophersuazobenavides/" target="_blank" rel="noopener">Ver todas las publicaciones en Instagram</a>
+        </p>
+      </div>
+    </section>
+
     <!-- ===================== ACERCA DE ===================== -->
     <section class="seccion" id="acerca">
       <div class="contenedor acerca">
@@ -308,6 +340,7 @@
       <nav aria-label="Menú del pie de página">
         <a href="#noticias">Noticias</a>
         <a href="#comunicaciones">Comunicaciones</a>
+        <a href="#redes">Redes Sociales</a>
         <a href="#acerca">Acerca de</a>
         <a href="#contacto">Contacto</a>
       </nav>
@@ -316,5 +349,7 @@
   </footer>
 
   <script src="js/app.js" defer></script>
+  <!-- Convierte los bloques "instagram-media" en publicaciones de Instagram -->
+  <script async src="https://www.instagram.com/embed.js"></script>
 </body>
 </html>

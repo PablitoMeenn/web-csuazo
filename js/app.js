@@ -47,7 +47,7 @@
       });
     }, { rootMargin: "-45% 0px -50% 0px" });
 
-    ["noticias", "comunicaciones", "acerca", "contacto"].forEach(function (id) {
+    ["noticias", "comunicaciones", "redes", "acerca", "contacto"].forEach(function (id) {
       var seccion = document.getElementById(id);
       if (seccion) observador.observe(seccion);
     });
