@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 500">
-  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a900"/><stop offset="1" stop-color="#e08e00"/></linearGradient></defs>
-  <circle cx="225" cy="260" r="200" fill="url(#g)"/>
-  <circle cx="225" cy="190" r="78" fill="#f6efe3"/>
-  <path d="M60 500 C70 360 140 300 225 300 S380 360 390 500Z" fill="#f6efe3"/>
-  <path d="M190 300 L225 360 L260 300Z" fill="#0b3a5b"/>
-  <text x="225" y="470" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#0b3a5b">FOTO DEL CANDIDATO</text>
-</svg>
